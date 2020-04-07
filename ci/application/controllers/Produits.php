@@ -8,7 +8,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Produits extends CI_Controller 
 {
 /**
- * Exercice 1 
+ * Exercice 1 et 2
+ * affichage tableau 
  */
 
     public function liste()
@@ -21,22 +22,11 @@ class Produits extends CI_Controller
         // on ajoute un 2eme variable contenant Loper  
         $aView["nom"] = "Loper" ;  
 
+        $aView["reference"] = ["Aramis", "Athos", "Clatronic", "Camping", "Green"];
         // On passe le tableau en second argument de la méthode 
+        //affichage dans views/liste.php
         $this->load->view('liste', $aView);
+
+
     }
-
-/**
- * Exercice 2
- */
-    public function tableau()
-    {
-        $aProduits["item"] = ["Aramis", "Athos", "Clatronic", "Camping", "Green"];   
-        
-        $this->load->view('tableau', $aProduits);
-    }
-
-
-
-
-
 }
