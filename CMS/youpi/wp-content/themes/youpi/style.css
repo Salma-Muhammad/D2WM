@@ -1,0 +1,10 @@
+/*
+Theme Name: Youpi !
+Author: Salma
+Description: Mon premier template WordPress, avec Bootstrap
+Version: 1.0.0
+*/  
+html 
+{
+    background-image: url("lizard.png");
+}
